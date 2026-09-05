@@ -7,7 +7,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-df = pd.read_csv(r"C:\credit_card_fraud\credit_card_fraud_10k.csv")
+df = pd.read_csv("credit_card_fraud_10k.csv")
 
 x = df.drop(columns=["transaction_id", "is_fraud"])
 y = df["is_fraud"]
