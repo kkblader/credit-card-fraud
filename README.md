@@ -1,2 +1,2 @@
-🛡️ Razorpay AI Risk Manager
-[Open App on Streamlit Cloud](https://<your-app-name>.streamlit.app)
+Razorpay AI Risk Manager
+(https://your-app-name.streamlit.app)
