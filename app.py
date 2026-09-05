@@ -25,8 +25,8 @@ except Exception:
 
 with st.sidebar:
     st.header("Transaction Inputs")
-    amount = st.number_input("Amount (INR ₹)", min_value=1.0, max_value=100000.0, value=250.0, step=25.0)
-    transaction_hour = st.slider("Transaction Hour (0–23)", 0, 23, 14)
+    amount = st.number_input("Amount (INR ₹)", min_value=1.0, max_value=100000.0, value=200.0, step=25.0)
+    transaction_hour = st.slider("Transaction Hour (0–23)", 0, 23, 7)
     merchant_category = st.selectbox("Merchant Category", options=merchant_categories)
 
     col1, col2 = st.columns(2)
@@ -35,8 +35,8 @@ with st.sidebar:
     with col2:
         location_mismatch = st.radio("Location Mismatch?", [0, 1], format_func=lambda x: "Yes" if x == 1 else "No")
 
-    device_trust_score = st.slider("Device Trust Score (0–100)", 0, 100, 80)
-    velocity_last_24h = st.slider("Velocity Last 24h (Tx Count)", 0, 30, 2)
+    device_trust_score = st.slider("Device Trust Score (0–100)", 0, 100, 35)
+    velocity_last_24h = st.slider("Velocity Last 24h (Tx Count)", 0, 30, 10)
     cardholder_age = st.number_input("Cardholder Age", min_value=18, max_value=100, value=35)
 
 payload = {
