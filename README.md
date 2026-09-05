@@ -1,2 +1,2 @@
 Razorpay AI Risk Manager
-(https://your-app-name.streamlit.app)
+https://credit-card-fraud-wgt9yjjvcmgacp9jdcnhyb.streamlit.app/
