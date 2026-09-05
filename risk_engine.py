@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 
-ARTIFACTS_PATH = r"C:\credit_card_fraud\artifacts.joblib"
+ARTIFACTS_PATH = "artifacts.joblib"
 pipeline = joblib.load(ARTIFACTS_PATH)
 
 def generate_rule_based_audit(tx_dict: dict) -> str:
