@@ -14,7 +14,7 @@ st.markdown("**Deterministic ML Fraud Scoring + Rule-Based Risk Engine (No GenAI
 @st.cache_resource
 def get_categories():
     # Load directly as the Pipeline object
-    pipeline = joblib.load(r"C:\credit_card_fraud\artifacts.joblib")
+    pipeline = joblib.load("artifacts.joblib")
     encoder = pipeline.named_steps["preprocessor"].named_transformers_["cat"]
     return list(encoder.categories_[0])
 
